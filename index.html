@@ -19,6 +19,36 @@
     --bright: #ffffff;
   }
 
+  body.light {
+    --bg: #f0f4f8;
+    --surface: #e2e8f0;
+    --card: #ffffff;
+    --border: #cbd5e1;
+    --accent: #0891b2;
+    --accent2: #ea580c;
+    --accent3: #7c3aed;
+    --text: #1e293b;
+    --muted: #64748b;
+    --bright: #0f172a;
+  }
+
+  .theme-toggle {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 0.4rem;
+  }
+  .theme-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   html { scroll-behavior: smooth; }
@@ -783,6 +813,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">RHN // 2025</div>
+  <button class="theme-toggle" id="themeToggle">🌙 DARK</button>
   <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('open')">
     <span></span>
     <span></span>
@@ -1226,6 +1257,21 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // Theme toggle
+  const themeBtn = document.getElementById('themeToggle');
+  const body = document.body;
+
+  if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light');
+    themeBtn.textContent = '☀️ LIGHT';
+  }
+
+  themeBtn.addEventListener('click', () => {
+    body.classList.toggle('light');
+    const isLight = body.classList.contains('light');
+    themeBtn.textContent = isLight ? '☀️ LIGHT' : '🌙 DARK';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
 </script>
 </body>
 </html>
