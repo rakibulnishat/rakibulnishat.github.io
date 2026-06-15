@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Projects — Rakibul Hasan Nishat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <a class="navbar-brand" href="index.html">Rakibul <span>Hasan</span> Nishat</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+      <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+      <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <h2 class="page-title">Research Projects</h2>
+  <p class="section-sub">Selected research and engineering projects spanning embedded AI, medical imaging, and IoT systems.</p>
+
+  <!-- Thesis -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">Self-Charging Surveillance Robot with Owner Recognition (SCSR-ORS)</span>
+      <span class="project-year">2024 – 2025</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">B.Sc. Thesis</span>
+      <span class="tag">Robotics</span>
+      <span class="tag">Computer Vision</span>
+      <span class="tag">UWB/IMU</span>
+      <span class="tag">Raspberry Pi</span>
+      <span class="tag">YOLOv4-tiny</span>
+    </div>
+    <div class="project-desc">
+      Designed a mobile surveillance robot on Raspberry Pi with autonomous wireless charging via
+      UWB/IMU-fused Extended Kalman Filter navigation. Implemented YOLOv4-tiny owner face
+      recognition achieving <strong>AUC = 0.911</strong> for biometric access control.
+    </div>
+  </div>
+
+  <!-- MRSI -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">MRSI Missing Data Estimation — Mask-Free Deep Learning</span>
+      <span class="project-year">2026</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Medical AI</span>
+      <span class="tag">U-Net</span>
+      <span class="tag">MRI</span>
+      <span class="tag">Deep Learning</span>
+    </div>
+    <div class="project-desc">
+      Designed a progressive U-Net architecture for estimating missing spectral data in Magnetic
+      Resonance Spectroscopic Imaging (MRSI) without requiring explicit masks. Targets clinical
+      MRI pipelines in resource-limited environments, contributing to affordable diagnostic infrastructure.
+    </div>
+  </div>
+
+  <!-- MangoScan -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">Mango Leaf Disease Classifier (MangoScan)</span>
+      <span class="project-year">2026</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">ResNet-50</span>
+      <span class="tag">Grad-CAM</span>
+      <span class="tag">LIME</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Hugging Face Spaces</span>
+      <span class="tag">Agriculture AI</span>
+    </div>
+    <div class="project-desc">
+      Trained ResNet-50 on an 8-class mango disease dataset; deployed on Hugging Face Spaces via
+      Docker with Grad-CAM and LIME explainability. Targeted low-connectivity environments for
+      smallholder farmer adoption in Bangladesh.
+    </div>
+  </div>
+
+  <!-- MediAssist BD -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">MediAssist BD — Offline Medical Assistant App</span>
+      <span class="project-year">2026</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">LLM</span>
+      <span class="tag">Qwen2-1.5B</span>
+      <span class="tag">MNN</span>
+      <span class="tag">Android / Kotlin</span>
+      <span class="tag">RxNorm API</span>
+      <span class="tag">Healthcare</span>
+    </div>
+    <div class="project-desc">
+      Built a fully offline Android medical assistant for Bangla and English-speaking users using
+      Qwen2-1.5B LLM deployed via Alibaba's MNN (Mobile Neural Network) inference engine with JNI
+      integration in Kotlin. Integrated RxNorm API for drug database connectivity. Targets
+      healthcare access in rural low-connectivity settings of Bangladesh.
+    </div>
+  </div>
+
+  <!-- Mental Health AI -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">Mental Health AI — Multi-Label Depression &amp; Anxiety Classifier</span>
+      <span class="project-year">2026</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">RoBERTa</span>
+      <span class="tag">NLP</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Hugging Face</span>
+      <span class="tag">Medical AI</span>
+    </div>
+    <div class="project-desc">
+      Developed a multi-head RoBERTa-based classifier with three independent binary output heads
+      for depression detection, anxiety detection, and safety-critical flagging. Achieved
+      <strong>Depression F1 = 0.82</strong> and <strong>Anxiety F1 = 0.86</strong> on the
+      held-out evaluation; deployed as a REST API via FastAPI on Hugging Face Spaces.
+    </div>
+  </div>
+
+  <!-- Edge AI -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">Multi-Modal Embedded Vision Framework for Edge AI</span>
+      <span class="project-year">2024 – 2025</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">YOLOv4-tiny</span>
+      <span class="tag">CNN</span>
+      <span class="tag">Raspberry Pi</span>
+      <span class="tag">Edge AI</span>
+      <span class="tag">IEEE ICCIT 2025</span>
+    </div>
+    <div class="project-desc">
+      Built a real-time object detection, facial emotion recognition, and biometric identification
+      pipeline on a low-power edge platform (Raspberry Pi). Optimized inference latency for
+      GPU-free deployment by combining YOLOv4-tiny and lightweight CNNs in a single embedded pipeline.
+      Published at 28th IEEE ICCIT 2025.
+    </div>
+  </div>
+
+  <!-- GSM Pet Feeder -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">GSM-IoT Smart Pet Feeder with Mobile App</span>
+      <span class="project-year">2024</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Arduino</span>
+      <span class="tag">SIM800L GSM</span>
+      <span class="tag">IoT</span>
+      <span class="tag">Android</span>
+      <span class="tag">IEEE SPICSCON 2025</span>
+    </div>
+    <div class="project-desc">
+      Developed an Arduino + SIM800L GSM IoT device achieving <strong>98% SMS command success
+      rate</strong> and ±2.67% portion dispensing variance. Designed a companion Android app via
+      MIT App Inventor for remote feeding control and real-time status monitoring.
+      Published at IEEE SPICSCON 2025.
+    </div>
+  </div>
+
+  <!-- Irrigation -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">IoT Smart Irrigation System with Cloud Monitoring</span>
+      <span class="project-year">2024 – 2025</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">ESP32</span>
+      <span class="tag">IoT</span>
+      <span class="tag">Cloud Dashboard</span>
+      <span class="tag">Agriculture</span>
+      <span class="tag">IEEE QPAIN 2026</span>
+    </div>
+    <div class="project-desc">
+      Engineered an ESP32-based automated irrigation system with cloud dashboard and mobile alerts
+      for smallholder farmers. Monitors soil moisture, soil pH, rainfall, temperature, and humidity
+      in real time. Published at QPAIN 2026.
+    </div>
+  </div>
+
+  <!-- Self-Balancing Robot -->
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-title">Self-Balancing Two-Wheeled Robot Using PID Controller</span>
+      <span class="project-year">2024</span>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Arduino Nano</span>
+      <span class="tag">MPU6050 IMU</span>
+      <span class="tag">PID Control</span>
+      <span class="tag">IEEE QPAIN 2026</span>
+    </div>
+    <div class="project-desc">
+      Designed and implemented a two-wheeled self-balancing robot with real-time discrete-time PID
+      control; validated stability under dynamic load conditions. Published at IEEE QPAIN 2026.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Md. Rakibul Hasan Nishat &nbsp;·&nbsp; Mechatronics Engineering, RUET &nbsp;·&nbsp;
+    <a href="https://github.com/rakibulnishat" target="_blank">GitHub</a>
+  </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
